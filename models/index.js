@@ -35,6 +35,7 @@ db.feedback = require("../app/modules/feedback/feedback.model")(
   db.sequelize,
   DataTypes
 );
+db.blog = require("../app/modules/blog/blog.model")(db.sequelize, DataTypes);
 db.contact = require("../app/modules/contact/contact.model")(
   db.sequelize,
   DataTypes

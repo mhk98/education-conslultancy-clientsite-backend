@@ -11,6 +11,7 @@ const CustomizeRoutes = require("../modules/customize/customize.routes");
 const FeedbackRoutes = require("../modules/feedback/feedback.routes");
 const ContactRoutes = require("../modules/contact/contact.routes");
 const StudyRoutes = require("../modules/study/study.routes");
+const BlogRoutes = require("../modules/blog/blog.routes");
 
 const router = express.Router();
 
@@ -51,6 +52,10 @@ const moduleRoutes = [
   {
     path: "/feedback",
     route: FeedbackRoutes,
+  },
+  {
+    path: "/blog",
+    route: BlogRoutes,
   },
   {
     path: "/contact",

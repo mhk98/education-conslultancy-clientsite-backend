@@ -52,10 +52,18 @@ const getAllFromDB = catchAsync(async (req, res) => {
 const updateOneFromDB = catchAsync(async (req, res) => {
   const { id } = req.params;
 
-  const { name, text, requirements, programs, IELTS, solvency, processing, scholarships} =
-    req.body;
+  const {
+    name,
+    text,
+    requirements,
+    programs,
+    IELTS,
+    solvency,
+    processing,
+    scholarships,
+  } = req.body;
 
-    console.log(req.body)
+  console.log(req.body);
   const data = {
     name: name === "" ? undefined : name,
     text: text === "" ? undefined : text,
