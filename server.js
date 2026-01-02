@@ -117,6 +117,7 @@ const app = express();
 const allowedOrigins = [
   "http://localhost:3001", // Local dev (optional)
   "http://localhost:3000", // Local dev (optional)
+  "http://localhost:4000", // Local dev (optional)
   "https://login.eaconsultancy.info",
 ];
 

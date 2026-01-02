@@ -36,6 +36,29 @@ db.feedback = require("../app/modules/feedback/feedback.model")(
   DataTypes
 );
 db.blog = require("../app/modules/blog/blog.model")(db.sequelize, DataTypes);
+db.workStation = require("../app/modules/workstation/workstation.model")(
+  db.sequelize,
+  DataTypes
+);
+db.teamIntroduction =
+  require("../app/modules/teamIntroduction/teamIntroduction.model")(
+    db.sequelize,
+    DataTypes
+  );
+db.management = require("../app/modules/management/management.model")(
+  db.sequelize,
+  DataTypes
+);
+
+db.employee = require("../app/modules/employee/employee.model")(
+  db.sequelize,
+  DataTypes
+);
+db.gallery = require("../app/modules/gallery/gallery.model")(
+  db.sequelize,
+  DataTypes
+);
+
 db.contact = require("../app/modules/contact/contact.model")(
   db.sequelize,
   DataTypes
