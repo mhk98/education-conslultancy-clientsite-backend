@@ -9,7 +9,6 @@ const insertIntoDB = catchAsync(async (req, res) => {
     title,
     subTitle,
     text,
-    image: req.file ? req.file.path : undefined,
   };
   const result = await TeamIntroductionService.insertIntoDB(data);
   console.log("result", result);
@@ -41,7 +40,6 @@ const updateOneFromDB = catchAsync(async (req, res) => {
     name: name === "" ? undefined : name,
     designation: designation === "" ? undefined : designation,
     text: text === "" ? undefined : text,
-    image: req.file ? req.file.path : undefined,
   };
 
   const result = await TeamIntroductionService.updateOneFromDB(id, data);
