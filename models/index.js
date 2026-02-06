@@ -8,60 +8,60 @@ db.user = require("../app/modules/user/user.model")(db.sequelize, DataTypes);
 
 db.banner = require("../app/modules/banner/banner.model")(
   db.sequelize,
-  DataTypes
+  DataTypes,
 );
 db.aboutUs = require("../app/modules/aboutUs/aboutUs.model")(
   db.sequelize,
-  DataTypes
+  DataTypes,
 );
 db.feature = require("../app/modules/feature/feature.model")(
   db.sequelize,
-  DataTypes
+  DataTypes,
 );
 db.country = require("../app/modules/country/country.model")(
   db.sequelize,
-  DataTypes
+  DataTypes,
 );
 db.study = require("../app/modules/study/study.model")(db.sequelize, DataTypes);
 db.requirement = require("../app/modules/requirement/requirement.model")(
   db.sequelize,
-  DataTypes
+  DataTypes,
 );
 db.customize = require("../app/modules/customize/customize.model")(
   db.sequelize,
-  DataTypes
+  DataTypes,
 );
 db.feedback = require("../app/modules/feedback/feedback.model")(
   db.sequelize,
-  DataTypes
+  DataTypes,
 );
 db.blog = require("../app/modules/blog/blog.model")(db.sequelize, DataTypes);
 db.workStation = require("../app/modules/workstation/workstation.model")(
   db.sequelize,
-  DataTypes
+  DataTypes,
 );
 db.teamIntroduction =
   require("../app/modules/teamIntroduction/teamIntroduction.model")(
     db.sequelize,
-    DataTypes
+    DataTypes,
   );
 db.management = require("../app/modules/management/management.model")(
   db.sequelize,
-  DataTypes
+  DataTypes,
 );
 
 db.employee = require("../app/modules/employee/employee.model")(
   db.sequelize,
-  DataTypes
+  DataTypes,
 );
 db.gallery = require("../app/modules/gallery/gallery.model")(
   db.sequelize,
-  DataTypes
+  DataTypes,
 );
 
 db.contact = require("../app/modules/contact/contact.model")(
   db.sequelize,
-  DataTypes
+  DataTypes,
 );
 
 // db.user.hasMany(db.commission, { foreignKey: "user_id" });

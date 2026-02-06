@@ -27,7 +27,7 @@ const login = async (data) => {
   if (!user) {
     throw new ApiError(
       404,
-      "No user found with this email. Please create an account first."
+      "No user found with this email. Please create an account first.",
     );
   }
 
@@ -263,7 +263,7 @@ const updateUserPasswordFromDB = async (id, payload) => {
   // Update the password in the database
   const result = await User.update(
     { Password: hashedPassword }, // Hash the new password
-    { where: { id } } // Update the password for the given user id
+    { where: { id } }, // Update the password for the given user id
   );
 
   return result;

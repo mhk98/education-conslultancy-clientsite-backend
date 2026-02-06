@@ -8,7 +8,10 @@ const insertIntoDB = async (data) => {
 };
 
 const getAllFromDB = async () => {
-  const result = await TeamIntroduction.findAll();
+  const result = await TeamIntroduction.findOne({
+    where: {}, // দরকার হলে শর্ত দিন
+    order: [["createdAt", "DESC"]], // latest
+  });
   return result;
 };
 

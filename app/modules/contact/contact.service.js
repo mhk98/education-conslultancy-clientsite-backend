@@ -23,6 +23,7 @@ const deleteIdFromDB = async (id) => {
 };
 
 const updateOneFromDB = async (id, data) => {
+  console.log("contactInfo", data);
   const result = await Contact.update(data, {
     where: {
       id: id,

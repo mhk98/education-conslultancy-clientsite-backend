@@ -40,7 +40,6 @@ const updateOneFromDB = catchAsync(async (req, res) => {
 
   const { phone, branch, location } = req.body;
 
-  console.log(req.file.path)
   console.log(req.body)
 
   const data = {

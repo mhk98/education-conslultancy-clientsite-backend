@@ -16,7 +16,10 @@ const insertIntoDB = async (data) => {
 };
 
 const getAllFromDB = async () => {
-  const result = await WorkStation.findAll();
+  const result = await WorkStation.findOne({
+    where: {}, // দরকার হলে শর্ত দিন
+    order: [["createdAt", "DESC"]], // latest
+  });
   return result;
 };
 
